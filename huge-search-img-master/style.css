@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #C2C2C2;
+    background-color: #F1F1F1;
+    min-height: 100vh;
+   /*min-width: 1300px;*/
+}
+             /*---- header-----*/
+.line {
+    position: relative;
+    width: 100%;
+    padding: 60px 0 60px;
+    color: #c2c2c2;
+}
+.list-main {
+    width: 100%;
+    padding-left: 20px;
+}
+.line-search, .line-submit {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.line .line-search {
+    font-size: 80px;
+    font-weight: 500;
+    width: 50%
+}
+.line-search::-webkit-input-placeholder { color:#ccc; }
+.line-search:-moz-placeholder { color:#ccc; }
+.line-search::-moz-placeholder { color:#ccc; }
+.line-search:-ms-input-placeholder { color:#ccc;
+}
+.line-search:focus {
+    color: #EC5A62;
+}
+.line-submit {
+    background-image: url("img/magnifier.svg");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    right: 20%;
+}
+footer {
+    height:100px;
+}
+        /*--container ---*/
+.table-list {
+    box-sizing: border-box;
+}
+.table-list .column-list {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+.table-list .column-list:nth-child(n+1) {
+    margin-left: 5%;
+ }
+.table-list h2 {
+    text-transform: uppercase ;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 20px;
+}
+.table-list li {
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid rgba(118,117,128,0.05);
+}
+.table-list a {
+    display: block;
+    text-decoration: none;
+    background-color:rgba(118,117,128,0.05);
+    padding: 10px;
+    color: #c2c2c2;
+    font-size: 15px;
+    font-weight: 500;
+}
+.table-list .link-img,
+.table-list h3 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0;
+}
+.table-list .link-img {
+    height: 50px;
+    width: 50px;
+}
+.circle {
+    border-radius: 35px;
+}
+.table-list h3 {
+    font-size: 14px;
+    width: 50%;
+    font-weight: 300;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+h3:hover {
+    color: #ec5a62;
+}
+li:hover {
+    background-color: rgba(118,117,128,0.1)  ;
+}
