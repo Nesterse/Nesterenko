@@ -1,0 +1,349 @@
+@font-face {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Aleo Regular';
+url('fonts/aleo-regular-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+url('fonts/myriadpro-regular.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+.ba-info {
+    font-family: 'Myriad Pro Regular', sans-serif;
+}
+.search, .ba-menu, .select, .what, .book {
+    font-family: 'Aleo Regular', sans-serif;
+}
+
+.line-search, .ba-blok p, .ba-text {
+    letter-spacing: .1em;
+}
+
+.ba-slide {
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.main {
+    background: #5474fd url(../img/image-01.jpg) 50% no-repeat;
+    text-align: center;
+}
+
+.ba-head {
+    padding: 10% 32% 10%;
+}
+
+.ba-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ba-container h1 {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 2%;
+}
+
+.ba-text {
+    letter-spacing: 0.31em;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0 0 15%;
+}
+
+.ba-search {
+    width: 650px;
+    height: 60px;
+    display: flex;
+    flex-grow: 3;
+    flex-basis: auto;
+    margin: 0 0 30%;
+}
+
+input[type="text"] {
+    width: 76%;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.line-search::-webkit-input-placeholder { color:#ccc; }
+.line-search:-moz-placeholder { color:#ccc; }
+.line-search::-moz-placeholder { color:#ccc; }
+.line-search:-ms-input-placeholder { color:#ccc;
+}
+.search {
+    width: 13%;
+    border: 1px solid #ffffff;
+    border-right: none;
+    background-color: #5474fd;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.ba-search .loupe {
+    width: 13%;
+    vertical-align: middle;
+    border: 1px solid #ffffff;
+    border-left: none;
+    background: #5474fd url("../img/loupe.svg") 50% no-repeat;
+    cursor: pointer;
+}
+
+.ba-head__scroll {
+    letter-spacing: .2em;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.ba-scroll {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    background: url("../img/arrow.svg") 50% no-repeat;
+    transform: translateX(-50%);
+}
+
+.ba-container__menu {
+    background-color: #506be2;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.ba-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ba-menu {
+    list-style: none;
+    text-transform: uppercase;
+    width: 540px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ba-link {
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    display: table-cell;
+    text-decoration: none;
+}
+/* ---  end header --- */
+.why {
+    background: #333333 url(../img/image-2.jpg) 50% no-repeat;
+    height: 685px;
+    padding: 10% 0 3% 18%;
+}
+.ba-blok {
+    width: 540px;
+    height: 370px;
+    text-align: left;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-right: 5%;
+}
+.ba-blok h1 {
+    text-transform: uppercase;
+    font-family: 'Myriad Pro Regular', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+.ba-places2 img {
+    margin-left: 15%;
+}
+.ba-container__select {
+    background: #333333;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.smart, .select {
+    position: relative;
+}
+.smart {
+    bottom: -10px;
+    z-index: 1;
+}
+.select {
+    width: 57%;
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+/*   ----spain-----  */
+.spain {
+    background: #333333 url(../img/image-3.jpg) 50% no-repeat;
+    height: 700px;
+    padding: 19% 18% 3%;
+}
+
+.ba-post {
+    width: 540px;
+    height: 370px;
+    background-color: #302927;
+    opacity: 0.95;
+    text-align: left;
+    padding: 20px 20px 0;
+}
+
+.ba-post h4 {
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.ba-post h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ba-post p, .ba-blok p {
+    line-height: 1.5em;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.book {
+    width: 228px;
+    height: 60px;
+    vertical-align: middle;
+    border: none;
+    background: linear-gradient(to top right, #496bfe 50%, #5474fd 50%);
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    padding: 0;
+    cursor: pointer;
+}
+
+/*   -----end spain----   */
+.four {
+    background: #333333 url(../img/image-4.jpg) 50% no-repeat;
+    height: 700px;
+    padding-top: 230px;
+    padding-left: 60%;
+}
+
+/*   -----end grand----   */
+
+.five {
+    background: #232323 url(../img/image-5.jpg) 50% no-repeat;
+    height: 730px;
+    padding: 11% 19% 0;
+    text-align: center;
+}
+
+.ba-inner {
+    height: 290px;
+    display: flex;
+    justify-content: center;
+}
+
+.what {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 90px;
+}
+
+.ba-picture img, .ba-post {
+    height: 290px;
+}
+
+.ba-inner .ba-post {
+    padding-top: 20px;
+    background-color: #333333;
+    box-sizing: border-box;
+}
+
+.ba-info span {
+    color: #506be2;
+    font-size: 46px;
+    font-weight: 800;
+}
+
+/*   -----end what----   */
+.ba-footer {
+    background: #232323;
+    background-size: cover;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.ba-footer .ba-logo {
+    font-size: 24px;
+    margin-top: 30px;
+    letter-spacing: 0.14em;
+}
+
+.ba-info {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.ba-footer span {
+    margin-right: 15px;
+    bottom: 10%;
+}
+
+.ba-scroll:hover {
+    background-color: #5474fd;
+}
+
+a:hover {
+    color: #fd174b;
+}
+
+input:hover {
+    border: 1px solid #ffffff;
+}
+
+.loupe:active {
+    background-color: #221eff;
+}
+input:focus {
+    color: #221eff;
+}
