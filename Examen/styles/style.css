@@ -39,7 +39,7 @@ body {
 }
 
 .main {
-    background: #5474fd url(../img/image-01.jpg) 50% no-repeat;
+    background: #5474fd url(../img/image-1.jpg) 50% no-repeat;
     text-align: center;
 }
 
@@ -182,7 +182,7 @@ input[type="text"] {
     margin-bottom: 60px;
 }
 .ba-places2 img {
-    margin-left: 15%;
+    margin-left: 10%;
 }
 .ba-container__select {
     background: #333333;
@@ -262,7 +262,7 @@ input[type="text"] {
     background: #333333 url(../img/image-4.jpg) 50% no-repeat;
     height: 700px;
     padding-top: 230px;
-    padding-left: 60%;
+    padding-left: 50%;
 }
 
 /*   -----end grand----   */
