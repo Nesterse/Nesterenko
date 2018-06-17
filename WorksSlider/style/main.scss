@@ -1,0 +1,159 @@
+@import "slick", "slick-theme";
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1600px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: .1em;
+  color: #000000;
+  background: url("../img/bg.png") no-repeat center;
+  main {
+    margin-bottom: 120px;
+  }
+
+}
+.ba-header {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+  .ba-title{
+    color: #303030;
+    font-weight: 600;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    &__plus {
+      position: absolute;
+      top: 25px;
+      right: 30%;
+    }
+    &__mission {
+      font-size: 86px;
+      position: relative;
+      margin: 0;
+    }
+    &__sign {
+      position: absolute;
+      top: 40%;
+      left: 7%;
+    }
+  }
+.ba-section {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  .ba-slider {
+    position: relative;
+  }
+  .ba-img {
+    margin-left: 40px;
+    width: 430px;
+    height: 400px;
+  }
+  .ba-hover {
+    margin-left: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(27, 241, 173, .8);
+    color: #fff;
+    opacity: 0;
+
+  .ba-text {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    h4 {
+      font-size: 28px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+  }
+  }
+}
+.ba-slider:hover .ba-hover {
+  opacity: 1;
+}
+
+/*--Slick slider--*/
+.slick-arrow {
+  z-index: 1;
+  .slick-prev {
+    left: 0;
+  }
+  &:before {
+    content: "";
+  }
+  /* &.slick-prev {
+    left: 0;
+  } */
+  &.slick-next {
+    right: 0;
+  }
+}
+/*--End Slick slider--*/
+
+/*---Rotate ----*/
+
+img.ba-title__plus {
+  animation: 1s ease-in 0s normal none infinite running ba-title__plus;
+  -webkit-animation: 1s linear 0s normal none infinite running ba-title__plus;
+  animation-timing-function: steps(30, end);
+}
+@keyframes ba-title__plus {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes ba-title__plus {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*---END Rotate ----*/
+
+/*---SCROLL ----*/
+.scroll-up {
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.50;
+  display: none;
+  cursor: pointer;
+}
+
+/*---END SCROLL ----*/
+.arrowLeft, .arrowRight {
+  z-index: 1;
+  position: absolute;
+  top: 150px;
+  opacity: 0.5;
+}
+.arrowLeft {
+  left: 0;
+}
+.arrowRight{
+  right: 0;
+}
+
+
+/*---ARROW ----*/
