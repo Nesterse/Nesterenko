@@ -657,7 +657,7 @@ body {
   line-height: 50px;
   text-align: center;
   font-size: 14px;
-  tansition: all .3s linear;
+  transition: all .3s linear;
   -webkit-transition: all .3s linear;
   -moz-transition: all .3s linear; }
 
@@ -780,13 +780,9 @@ body {
       font-style: italic;
       text-transform: none;
       line-height: 30px; }
-      .ba-projects .ba-projects-article .ba-projects-city:hover {
-        cursor: pointer;
-        color: #55b7ff;
-        text-decoration: underline; }
-      .ba-projects .ba-projects-article .ba-projects-city .fa-map-marker {
-        color: #2c4058;
-        font-size: 18px; }
+    .ba-projects .ba-projects-article .fa-map-marker {
+      color: #2c4058;
+      font-size: 18px; }
 
 /***-------------------NEWS***/
 .row {
@@ -995,5 +991,11 @@ body {
   background: #4b5562;
   color: #fff;
   border: 2px solid #7e5aff; }
+
+.ba-projects-city:hover,
+.ba-projects-city .fa-map-marker:hover {
+  cursor: pointer;
+  color: #55b7ff;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

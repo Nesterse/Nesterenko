@@ -1,5 +1,6 @@
 ;(function ($) {
     $(function () {
+
         $('.ba-header-slaider').slick({
             dots: true,
             infinite: true,
@@ -20,6 +21,7 @@
             nextArrow: '.arrowLeft',
             slide: '.ba-news-block'
         });
+
 
         var map,
             pointPin = {lat: 40.706254, lng: -73.9459947},
@@ -206,12 +208,7 @@
 
         initMap();
 
-
         /*---   SCROLL   ---*/
-
-        $('.ba-projects > .ba-projects-city__map').click(function () {
-            alert('hello');
-        });
 
         var offset = $('.ba-projects').offset().top;
 
@@ -238,12 +235,12 @@
         });
         $('.ba-header-arrow').click(function () {
             $('html, body').animate({
-                scrollTop: $('.ba-projects').offset().top
+                scrollTop: offset
             }, 300);
         });
         $('#project').click(function () {
             $('html, body').animate({
-                scrollTop: $('.ba-projects').offset().top
+                scrollTop: offset
             }, 3000);
         });
         $('#news').click(function () {
@@ -252,13 +249,18 @@
             }, 4000);
         });
         $('#contact').click(function () {
+            console.log(55);
             $('html, body').animate({
                 scrollTop: $('.ba-card').offset().top
             }, 5000);
         });
-        $('.ba-projects-city__map').change(function () {
-            console.log(55);
+
+        $('main').on('click', '.ba-projects-city__map', function () {
+            alert('hello');
         });
 
+        $('.ba-projects-btn').on('click', function () {
+            $('.ba-projects-text').toggleClass('none');
+        });
     });
 })(jQuery);
